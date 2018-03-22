@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">ParkKL</string>
+    <string name="drawer_open">Main Menu</string>
+    <string name="drawer_closed">ParkKL</string>
+
+  <!-- Sign in -->
+  <string name="sign_in">Sign In</string>
+
+  <!-- Sign Up -->
+  <string name="email">E-mail</string>
+  <string name="phone">Phone</string>
+  <string name="firstname">Firstname</string>
+  <string name="lastname">Lastname</string>
+  <string name="password">Password</string>
+  <string name="re_enter_password">Re-enter Password</string>
+  <string name="create_account">Create Account</string>
+  <string name="existing_user">Already a user? Sign In</string>
+  <string name="submit">Submit</string>
+  <string name="forgot_password">Forgot Password?</string>
+  <string name="no_account">No account yet? Create one</string>
+
+  <!-- Menu -->
+  <string name="home">Home</string>
+  <string name="penalty">Penalty</string>
+  <string name="parking_history">Parking History</string>
+  <string name="logout">Log Out</string>
+  <string name="wallet">Wallet</string>
+  <string name="my_profile">My Profile</string>
+
+  <!-- Wallet -->
+  <string name="wallet">Wallet</string>
+  <string name="top_up">Top Up</string>
+  <string name="balance">Balance:</string>
+  <string name="item">Item</string>
+  <string name="hours">Hours</string>
+  <string name="date">Date</string>
+  <string name="amount">Amount</string>
+  <string name="balance_value">RM 0</string>
+  <string name="card_info">Card Information</string>
+
+  <!-- History -->
+  <string name="history">Parking History</string>
+
+  <!-- Penalty -->
+  <string name="penalty">Penalty</string>
+
+  <!-- My Profile -->
+  <string name="my_profile">My Profile</string>
+  <string name="topup">Top Up</string>
+
+  <string name="book">Pay Parking</string>
+  <string name="extend">Extend Hours</string>
+  <string name="parking_hr">Parking Hours</string>
+  <string name="car_plate_number">Car Plate Number</string>
+
+  <!-- stripe -->
+  <string name="addPayment">Add Payment Method</string>
+  <string name="addThreeDSecureCard">Add Source</string>
+  <string name="addThreeDSecureCardSync">Add Source Rx</string>
+  <string name="paymentMethods">Payment Methods</string>
+
+  <string name="endingIn">Card ending in </string>
+  <string name="progressMessage">Creating Token&#8230;</string>
+  <string name="validationErrors">Validation Errors</string>
+
+  <string name="createAndroidPayTokens">Create Android Pay Tokens</string>
+  <string name="createCardTokens">Create Card Tokens</string>
+  <string name="createThreeDSecure">Create 3DS Sources</string>
+  <string name="cardNumber">Card Number</string>
+  <string name="createSource">Creating source&#8230;</string>
+  <string name="confirmPayment">Confirm payment details</string>
+  <string name="changeDetails">Change payment details</string>
+  <string name="pollingSource">Polling for source changes&#8230;</string>
+  <string name="save">Save</string>
+  <string name="saverx">Save Rx</string>
+  <string name="saveService">Save with Service</string>
+  <string name="selectSampleActivity">Select sample activity</string>
+  <string name="startPolling">Start polling</string>
+  <string name="tryThreeDSecure">Try 3DS</string>
+  <string name="verify">Verify</string>
+  <string name="updatedSources">Source results</string>
+  <string name="cvc">CVC</string>
+
+  <string name="ok">OK</string>
+
+  <string name="label_source_type">Type</string>
+  <string name="label_3ds_status">3DS status</string>
+  <string name="label_source_state">Status</string>
+  <string name="label_source_id">ID Last 6</string>
+
+  <string name="sample_card_requiring_3ds">4712 4900 5332 1968</string>
+  <string name="refresh">Re-fresh</string>
+
+  <string-array name="currency_array">
+    <item>Currency (optional)</item>
+    <item>Unspecified</item>
+    <item>USD</item>
+  </string-array>
+</resources>

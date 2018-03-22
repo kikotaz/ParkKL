@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/row_padding"
+    android:background="@android:color/white"
+    android:padding="@dimen/padd_10">
+
+  <LinearLayout
+      android:id="@+id/infoSection"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/trans_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/item_name"/>
+
+    <TextView
+        android:id="@+id/trans_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/description"/>
+  </LinearLayout>
+
+  <RelativeLayout
+      android:id="@+id/pricingSection"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/infoSection"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/trans_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/accent" />
+
+    <TextView
+        android:id="@+id/trans_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trans_date"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/accent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/trans_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/trans_amount"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textColor="@color/success"/>
+
+  </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+	<metadata>
+		<id>Stripe</id>
+		<version>1.12.0</version>
+		<title>Stripe</title>
+		<authors>Nick Berardi, Paul Irwin</authors>
+		<owners>Stripe, Inc</owners>
+		<description>Stripe is a simple, developer-friendly way to accept payments online. We believe that enabling transactions on the web is a problem rooted in code, not finance, and we want to help put more websites in business.</description>
+		<summary>Stripe is a simple, developer-friendly way to accept payments online. We believe that enabling transactions on the web is a problem rooted in code, not finance, and we want to help put more websites in business.</summary>
+		<language>en-US</language>
+		<projectUrl>https://github.com/nberardi/stripe-dotnet</projectUrl>
+		<licenseUrl>https://github.com/nberardi/stripe-dotnet/raw/master/LICENSE.txt</licenseUrl>
+		<iconUrl>https://github.com/nberardi/stripe-dotnet/raw/master/nuget/Stripe.Logo.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<tags>stripe credit card payment gateway rest api .net40 .net45</tags>
+		<dependencies>
+			<dependency id="RestSharp" version="105.2.3" />
+		</dependencies>
+		<frameworkAssemblies>
+			<frameworkAssembly assemblyName="System.Core" targetFramework="net40" />
+			<frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework="net40" />
+			<frameworkAssembly assemblyName="System.Web.Extensions" targetFramework="net40" />
+		</frameworkAssemblies>
+	</metadata>
+</package>

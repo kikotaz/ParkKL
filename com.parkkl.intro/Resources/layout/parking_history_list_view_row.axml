@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/row_padding"
+    android:background="@android:color/white"
+    android:padding="@dimen/padd_10">
+
+  <LinearLayout
+      android:id="@+id/infoSection"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/parking_stat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/fail"/>
+
+    <TextView
+        android:id="@+id/parking_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/description"/>
+
+    <TextView
+        android:id="@+id/car_plate_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/description"/>
+  </LinearLayout>
+
+  <RelativeLayout
+      android:id="@+id/pricingSection"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/infoSection"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/parking_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/accent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/parking_charge_per_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parking_hours"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/accent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/parking_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/parking_charge_per_hour"
+        android:layout_marginBottom="5dp"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textColor="@color/success"/>
+
+    <TextView
+        android:id="@+id/parking_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parking_charge_per_hour"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/accent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parking_charge_per_hour"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/accent"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+  </RelativeLayout>
+
+</RelativeLayout>

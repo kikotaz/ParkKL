@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_48dp"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nav_wallet"
+        android:icon="@drawable/ic_account_balance_wallet_black_48dp"
+        android:title="@string/wallet" />
+    <item
+        android:id="@+id/nav_penalty"
+        android:icon="@drawable/ic_receipt_black_48dp"
+        android:title="@string/penalty" />
+    <item
+        android:id="@+id/nav_parking_history"
+        android:icon="@drawable/ic_assignment_black_48dp"
+        android:title="@string/parking_history" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_power_settings_new_black_48dp"
+        android:title="@string/logout" />
+  </group>
+</menu>

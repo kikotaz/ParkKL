@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="primary">#009688</color>
+  <color name="primaryDark">#00796b</color>
+  <color name="accent">#009688</color>
+  <color name="window_background">#F5F5F5</color>
+  <color name="splash_background">#FFFFFF</color>
+  <color name="white">#FFFFFF</color>
+  <color name="input_background">#D3D3D3</color>
+  <color name="bg_row_background">#fa315b</color>
+  <color name="item_name">#535353</color>
+  <color name="description">#a9a9a9</color>
+  <color name="success">#3bbe8c</color>
+  
+  <!--stripe-->
+  <color name="spinnerItem">#AAAAAA</color>
+    <color name="editText">#AAAAAA</color>
+    <color name="buttonText">#EEEEEE</color>
+    <color name="headerText">#EEEEEE</color>
+    <color name="underline">#5458DF</color>
+    <color name="fadedBlue">#AA5458DF</color>
+  <color name="fail">#ed1b10</color>
+</resources>

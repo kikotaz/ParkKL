@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+  <fragment
+      android:id="@+id/parking_map"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.6"
+      android:name="com.google.android.gms.maps.MapFragment" />
+
+  <LinearLayout
+    android:id="@+id/infoSection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_weight ="0.1">
+
+    <TextView
+        android:id="@+id/parking_area_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:text="You are trying to park in:"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/item_name"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView
+        android:id="@+id/parking_area_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/item_name"
+        android:layout_toRightOf="@+id/parking_area_intro"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/parking_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/parking_area_name"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textColor="@color/success"
+        android:text="Parking fee = RM 2.00"/>
+
+  </LinearLayout>
+    
+<LinearLayout
+    android:id="@+id/infoSection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_weight="0.1">
+
+    <!--  Parking Hours Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/primaryDark"
+        android:text="@string/parking_hr"/>
+    
+      <EditText
+          android:id="@+id/input_hr"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="number"
+          android:textColor="@color/primaryDark"
+          android:background="@color/input_background"
+          android:paddingRight="40dp"/>
+
+    <!--  Car Plate Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/primaryDark"
+        android:text="@string/car_plate_number"/>
+    
+      <EditText
+          android:id="@+id/input_car_plate_number"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="text"
+          android:textColor="@color/primaryDark"
+          android:background="@color/input_background"
+          android:paddingRight="40dp"/>
+
+      <TextView
+          android:id="@+id/parking_limit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:textSize="18sp"
+          android:ellipsize="end"
+          android:fontFamily="sans-serif-medium"
+          android:textColor="@color/item_name"
+          android:layout_marginTop="10dp"/>
+
+  <Button
+      android:id="@+id/btn_book"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:layout_marginBottom="10dp"
+      android:padding="12dp"
+      android:text="@string/book"
+      android:textColor="@color/white"
+      android:background="@color/primary"
+      android:textSize="20dp" />
+
+  <Button
+      android:id="@+id/btn_extend"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"
+      android:padding="12dp"
+      android:text="@string/extend"
+      android:textColor="@color/white"
+      android:background="@color/primary"
+      android:textSize="20dp" />
+  </LinearLayout>
+</LinearLayout>
+      <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/navView"
+        app:headerLayout="@menu/header"
+        app:menu="@menu/main_menu" />
+</android.support.v4.widget.DrawerLayout>

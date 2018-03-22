@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/row_padding"
+    android:background="@android:color/white"
+    android:padding="@dimen/padd_10">
+
+  <LinearLayout
+      android:id="@+id/infoSection"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/penalty_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/item_name"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/penalty_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/description"/>
+
+    <TextView
+        android:id="@+id/penalty_number_plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/accent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/penalty_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/accent"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/excess_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/fail"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/penalty_total_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/accent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/penalty_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+  </LinearLayout>
+</RelativeLayout>
