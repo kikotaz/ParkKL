@@ -11,6 +11,10 @@ ParkKL can easily fix those issues by allowing the user to have his own wallet, 
 Features in ParkKL includes but not limited to (1) Small map for location detection (2) Top up of wallet (3) Payment for parking (4) Active parking session recognition (5) Extending parking
 (6) Payment for parking penalties
 
-ParkKL was developed using Xamarin.Android, and the backend is hosted in Azure Mobile Services instance with small SQL database.
+ParkKL was developed using Xamarin.Android, and the backend is hosted in Azure Mobile Services instance with small SQL database, with SendGrid integration as mailing service, with Stripe integration as payment processing service (testing only)
+
+com.parkkl.backend includes the code for the backend. com.parkkl.intro includes the code for the frontend Android mobile application.
+
+Please use API 19 and above for building this project.
 
 If you have any questions or issues, please contact me through karim.m.saleh@hotmail.com
